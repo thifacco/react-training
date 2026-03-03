@@ -1,4 +1,3 @@
-import React from "react";
 import styles from "./Tag.module.css";
 import classNames from "classnames";
 import { Categoria, Censura } from "../../types";

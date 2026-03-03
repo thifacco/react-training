@@ -3,7 +3,7 @@ import clasNames from "classnames";
 import styles from "./Button.module.css";
 
 type ButtonProps = {
-  variant: "default" | "icon";
+  variant?: "default" | "icon";
 } & React.ButtonHTMLAttributes<HTMLButtonElement>;
 
 const Button = ({ children, variant = "default", ...rest }: ButtonProps) => {

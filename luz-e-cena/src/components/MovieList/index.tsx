@@ -1,4 +1,3 @@
-import React from "react";
 import styles from "./MovieList.module.css";
 import CardMovie from "../CardMovie";
 import { Movie } from "../../types";

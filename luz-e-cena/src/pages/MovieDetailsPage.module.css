@@ -1,0 +1,13 @@
+.container {
+  max-width: var(--max-width-block);
+  width: 100%;
+  padding: var(--padding-l);
+  box-sizing: border-box;
+  display: flex;
+  flex-direction: column;
+  gap: var(--gap-m);
+}
+
+.error {
+  color: var(--vermelho);
+}

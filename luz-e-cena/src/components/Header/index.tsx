@@ -1,4 +1,3 @@
-import React from "react";
 import HeaderList from "./components/HeaderList";
 import HeaderListItem from "./components/HeaderListItem";
 import Logo from "../Logo";
