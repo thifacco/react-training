@@ -1,5 +1,5 @@
 import React from "react";
-import classnames from "classnames";
+import clasNames from "classnames";
 import styles from "./Button.module.css";
 
 type ButtonProps = {
@@ -13,7 +13,7 @@ const Button = ({ children, variant = "default", ...rest }: ButtonProps) => {
   };
 
   return (
-    <button className={classnames(styles.botao, classMap[variant])} {...rest}>
+    <button className={clasNames(styles.botao, classMap[variant])} {...rest}>
       {children}
     </button>
   );

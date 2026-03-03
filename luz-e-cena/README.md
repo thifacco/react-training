@@ -1,73 +1,43 @@
-# React + TypeScript + Vite
+![Descricao da sua imagem](thumb-react-ts.png)
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+# Luz e Cena
 
-Currently, two official plugins are available:
+Landing page de um site focado em cinema, que exibe os filmes em cartaz e que ainda vão estrear permitindo selecionar localidade, buscar filmes pelo título, se inscrever para receber informações e muito mais.
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) (or [oxc](https://oxc.rs) when used in [rolldown-vite](https://vite.dev/guide/rolldown)) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+## 🔨 Funcionalidades do projeto
 
-## React Compiler
+A página possui um cabeçalho, um banner, uma lista de filmes, uma seção de newsletter e um rodapé. Os filmes são retornados de uma API's local usando o JSON server. Possui a funcionalidade de filtrar os filmes no campo de busca por título.
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+<p align="center">
+  <img src="./img1.png" alt="Tela desktop" width="50%" style="vertical-align: top; margin-right: 20px;" />
+  <img src="./img2.png" alt="Tela desktop" width="50%" style="vertical-align: top; margin-right: 20px;"/>
+</p>
 
-## Expanding the ESLint configuration
+## ✔️ Técnicas e tecnologias utilizadas
 
-If you are developing a production application, we recommend updating the configuration to enable type-aware lint rules:
+As técnicas e tecnologias utilizadas pra isso são:
 
-```js
-export default defineConfig([
-  globalIgnores(['dist']),
-  {
-    files: ['**/*.{ts,tsx}'],
-    extends: [
-      // Other configs...
+- `React`: principal biblioteca para construção da interface
+- `Typescript`: para adicionar tipagem estática na aplicação
+- `Figma`: Protótipo de design da página
+- `JSON server`: para simular uma api local
+- `classnames`: para lidar com classes CSS e estilização dinâmica
+- `react-icons`: biblioteca de ícones do React
+- `CSS modules`: para escrever css no React
 
-      // Remove tseslint.configs.recommended and replace with this
-      tseslint.configs.recommendedTypeChecked,
-      // Alternatively, use this for stricter rules
-      tseslint.configs.strictTypeChecked,
-      // Optionally, add this for stylistic rules
-      tseslint.configs.stylisticTypeChecked,
+## 📁 Acesso ao projeto
 
-      // Other configs...
-    ],
-    languageOptions: {
-      parserOptions: {
-        project: ['./tsconfig.node.json', './tsconfig.app.json'],
-        tsconfigRootDir: import.meta.dirname,
-      },
-      // other options...
-    },
-  },
-])
-```
+Você pode [acessar o código fonte do projeto inicial](https://github.com/NeiltonSeguins/4472-react-ts) ou [baixá-lo](https://github.com/NeiltonSeguins/4472-react-ts/archive/refs/heads/aula-01.zip). Se você quiser acessar o figma do projeto, só [clicar neste link](https://www.figma.com/community/file/1464265240934231932).
 
-You can also install [eslint-plugin-react-x](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-x) and [eslint-plugin-react-dom](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-dom) for React-specific lint rules:
+## 🛠️ Abrir e rodar o projeto
 
-```js
-// eslint.config.js
-import reactX from 'eslint-plugin-react-x'
-import reactDom from 'eslint-plugin-react-dom'
+Após baixar o projeto, você pode abri-lo no Visual Studio Code. Para isso, siga os passos abaixo:
 
-export default defineConfig([
-  globalIgnores(['dist']),
-  {
-    files: ['**/*.{ts,tsx}'],
-    extends: [
-      // Other configs...
-      // Enable lint rules for React
-      reactX.configs['recommended-typescript'],
-      // Enable lint rules for React DOM
-      reactDom.configs.recommended,
-    ],
-    languageOptions: {
-      parserOptions: {
-        project: ['./tsconfig.node.json', './tsconfig.app.json'],
-        tsconfigRootDir: import.meta.dirname,
-      },
-      // other options...
-    },
-  },
-])
-```
+1. No menu superior do VS Code, clique em:
+   * **File > Open Folder** (ou uma opção similar).
+2. Procure o local onde o projeto foi salvo e selecione a pasta (se o projeto foi baixado como um arquivo ZIP, será necessário extraí-lo antes).
+3. Clique em **OK**.
+
+## 📚 Mais informações do curso
+
+Gostou do projeto e quer conhecer mais? Você pode [acessar o curso](https://cursos.alura.com.br) que desenvolve o projeto desde o começo!

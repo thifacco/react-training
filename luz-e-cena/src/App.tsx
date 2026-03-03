@@ -1,11 +1,15 @@
-import Banner from "./components/Banner"
-import Link from "./components/Link"
+import Banner from "./components/Banner";
+import Header from "./components/Header";
+import MovieSection from "./components/MovieSection";
 
 function App() {
-  return <>
-    <Banner src="./banner-desktop.png" alt="Banner" />
-    <Link href="/" target="_blank">Link</Link>
-  </>
+  return (
+    <>
+      <Header />
+      <Banner src="./banner.png" alt="Banner" />
+      <MovieSection />
+    </>
+  );
 }
 
-export default App
+export default App;
